@@ -12,7 +12,7 @@
 
 @synthesize allowedClass = _allowedClass;
 
-#pragma mark - Init methods
+#pragma mark - Init methods 
 
 /**
  * Init the array with a class type
