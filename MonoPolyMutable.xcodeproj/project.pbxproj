@@ -23,14 +23,6 @@
 		4E4930B216E3898B0064CC87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E49308D16E3898B0064CC87 /* Foundation.framework */; };
 		4E4930BA16E3898B0064CC87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E4930B816E3898B0064CC87 /* InfoPlist.strings */; };
 		4E4930BD16E3898B0064CC87 /* MonoPolyMutableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930BC16E3898B0064CC87 /* MonoPolyMutableTests.m */; };
-		4E4930CF16E38BC90064CC87 /* MonomorphicMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930C816E38BC90064CC87 /* MonomorphicMutableArray.m */; };
-		4E4930D016E38BC90064CC87 /* MonomorphicMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930C816E38BC90064CC87 /* MonomorphicMutableArray.m */; };
-		4E4930D116E38BC90064CC87 /* MonomorphicMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930CA16E38BC90064CC87 /* MonomorphicMutableDictionary.m */; };
-		4E4930D216E38BC90064CC87 /* MonomorphicMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930CA16E38BC90064CC87 /* MonomorphicMutableDictionary.m */; };
-		4E4930D316E38BC90064CC87 /* PolymorphicMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930CC16E38BC90064CC87 /* PolymorphicMutableArray.m */; };
-		4E4930D416E38BC90064CC87 /* PolymorphicMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930CC16E38BC90064CC87 /* PolymorphicMutableArray.m */; };
-		4E4930D516E38BC90064CC87 /* PolymorphicMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930CE16E38BC90064CC87 /* PolymorphicMutableDictionary.m */; };
-		4E4930D616E38BC90064CC87 /* PolymorphicMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4930CE16E38BC90064CC87 /* PolymorphicMutableDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,14 +58,6 @@
 		4E4930B916E3898B0064CC87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4E4930BB16E3898B0064CC87 /* MonoPolyMutableTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonoPolyMutableTests.h; sourceTree = "<group>"; };
 		4E4930BC16E3898B0064CC87 /* MonoPolyMutableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonoPolyMutableTests.m; sourceTree = "<group>"; };
-		4E4930C716E38BC90064CC87 /* MonomorphicMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomorphicMutableArray.h; path = Classes/MonomorphicMutableArray.h; sourceTree = "<group>"; };
-		4E4930C816E38BC90064CC87 /* MonomorphicMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MonomorphicMutableArray.m; path = Classes/MonomorphicMutableArray.m; sourceTree = "<group>"; };
-		4E4930C916E38BC90064CC87 /* MonomorphicMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonomorphicMutableDictionary.h; path = Classes/MonomorphicMutableDictionary.h; sourceTree = "<group>"; };
-		4E4930CA16E38BC90064CC87 /* MonomorphicMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MonomorphicMutableDictionary.m; path = Classes/MonomorphicMutableDictionary.m; sourceTree = "<group>"; };
-		4E4930CB16E38BC90064CC87 /* PolymorphicMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PolymorphicMutableArray.h; path = Classes/PolymorphicMutableArray.h; sourceTree = "<group>"; };
-		4E4930CC16E38BC90064CC87 /* PolymorphicMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PolymorphicMutableArray.m; path = Classes/PolymorphicMutableArray.m; sourceTree = "<group>"; };
-		4E4930CD16E38BC90064CC87 /* PolymorphicMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PolymorphicMutableDictionary.h; path = Classes/PolymorphicMutableDictionary.h; sourceTree = "<group>"; };
-		4E4930CE16E38BC90064CC87 /* PolymorphicMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PolymorphicMutableDictionary.m; path = Classes/PolymorphicMutableDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +87,6 @@
 		4E49307F16E3898A0064CC87 = {
 			isa = PBXGroup;
 			children = (
-				4E4930C616E38B8E0064CC87 /* Classes */,
 				4E49309116E3898B0064CC87 /* MonoPolyMutable */,
 				4E4930B516E3898B0064CC87 /* MonoPolyMutableTests */,
 				4E49308A16E3898B0064CC87 /* Frameworks */,
@@ -175,21 +158,6 @@
 				4E4930B816E3898B0064CC87 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4E4930C616E38B8E0064CC87 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				4E4930C716E38BC90064CC87 /* MonomorphicMutableArray.h */,
-				4E4930C816E38BC90064CC87 /* MonomorphicMutableArray.m */,
-				4E4930C916E38BC90064CC87 /* MonomorphicMutableDictionary.h */,
-				4E4930CA16E38BC90064CC87 /* MonomorphicMutableDictionary.m */,
-				4E4930CB16E38BC90064CC87 /* PolymorphicMutableArray.h */,
-				4E4930CC16E38BC90064CC87 /* PolymorphicMutableArray.m */,
-				4E4930CD16E38BC90064CC87 /* PolymorphicMutableDictionary.h */,
-				4E4930CE16E38BC90064CC87 /* PolymorphicMutableDictionary.m */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,10 +273,6 @@
 				4E49309816E3898B0064CC87 /* main.m in Sources */,
 				4E49309C16E3898B0064CC87 /* AppDelegate.m in Sources */,
 				4E4930A816E3898B0064CC87 /* ViewController.m in Sources */,
-				4E4930CF16E38BC90064CC87 /* MonomorphicMutableArray.m in Sources */,
-				4E4930D116E38BC90064CC87 /* MonomorphicMutableDictionary.m in Sources */,
-				4E4930D316E38BC90064CC87 /* PolymorphicMutableArray.m in Sources */,
-				4E4930D516E38BC90064CC87 /* PolymorphicMutableDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4930BD16E3898B0064CC87 /* MonoPolyMutableTests.m in Sources */,
-				4E4930D016E38BC90064CC87 /* MonomorphicMutableArray.m in Sources */,
-				4E4930D216E38BC90064CC87 /* MonomorphicMutableDictionary.m in Sources */,
-				4E4930D416E38BC90064CC87 /* PolymorphicMutableArray.m in Sources */,
-				4E4930D616E38BC90064CC87 /* PolymorphicMutableDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
