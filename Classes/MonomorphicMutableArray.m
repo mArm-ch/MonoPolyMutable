@@ -189,7 +189,7 @@
 #pragma mark - NSArray original methods override
 
 /**
- * Returns the nmber of objects in the array
+ * Returns the number of objects in the array
  *
  * @param void
  * @return NSUInteger
@@ -255,6 +255,7 @@ static id NotSupported() {
 
 #pragma mark - Invalidated initializers
 
+- (id)init { return NotSupported(); }
 - (id)initWithArray:(NSArray *)array { return NotSupported(); }
 - (id)initWithArray:(NSArray *)array copyItems:(BOOL)flag { return NotSupported(); }
 - (id)initWithCapacity:(NSUInteger)numItems { return NotSupported(); }

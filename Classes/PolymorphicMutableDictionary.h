@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PolymorphicMutableDictionary : NSMutableDictionary
+@interface PolymorphicMutableDictionary : NSMutableDictionary {
+    
+    Class _allowedClass;
+    NSMutableDictionary *_realDico;
+    
+}
+
+@property (atomic, readonly) Class allowedClass;
+
+- (id)initWithClass:(Class)allowedClass;
+- (id)initWithClass:(Class)allowedClass andCapacity:(NSUInteger)capacity;
+- (id)initWithClass:(Class)allowedClass andOtherDictionary:(NSDictionary *)otherDictionary;
 
 @end
