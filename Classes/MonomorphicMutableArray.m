@@ -39,7 +39,7 @@
  *
  * @param Class allowedClass: Array type class
  * @param NSUInteger capacity: The array's capacity 
- *
+ * @return id
  */
 - (id)initWithClass:(Class)allowedClass andCapacity:(NSUInteger)capacity {
     

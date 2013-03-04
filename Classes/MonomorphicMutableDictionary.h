@@ -18,7 +18,7 @@
 @property (atomic, readonly) Class allowedClass;
 
 - (id)initWithClass:(Class)allowedClass;
-- (id)initWithClass:(Class)allowedClass withCapacity:(NSUInteger)capacity;
+- (id)initWithClass:(Class)allowedClass andCapacity:(NSUInteger)capacity;
 - (id)initWithClass:(Class)allowedClass andOtherDictionary:(NSDictionary *)otherDictionary;
 
 @end
