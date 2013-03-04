@@ -238,4 +238,28 @@ static id NotSupported() {
     @throw exception;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark - Invalidated initializers
+
+- (id)initWithArray:(NSArray *)array { return NotSupported(); }
+- (id)initWithArray:(NSArray *)array copyItems:(BOOL)flag { return NotSupported(); }
+- (id)initWithCapacity:(NSUInteger)numItems { return NotSupported(); }
+- (id)initWithCoder:(NSCoder *)aDecoder { return NotSupported(); }
+- (id)initWithContentsOfFile:(NSString *)path { return NotSupported(); }
+- (id)initWithContentsOfURL:(NSURL *)url { return NotSupported(); }
+- (id)initWithObjects:(id)firstObj, ... { return NotSupported(); }
+- (id)initWithObjects:(const id [])objects count:(NSUInteger)cnt { return NotSupported(); }
+
 @end
