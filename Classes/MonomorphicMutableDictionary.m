@@ -107,7 +107,20 @@
  * @return void
  */
 - (void)setObject:(id)anObject forKey:(id<NSCopying>)aKey {
-    [_realDico setObject:anObject forKey:aKey];
+    
+    if (![anObject isMemberOfClass:_allowedClass]) {
+        NSException *exception = [NSException exceptionWithName:@"InvalidObjectType"
+                                                         reason:[NSString stringWithFormat:@"anObject is not of type %@", _allowedClass]
+                                                       userInfo:nil];
+        @throw exception;
+        
+    } else {
+    
+        [_realDico setObject:anObject forKey:aKey];
+    
+    }
+    
+
 }
 
 
@@ -122,7 +135,18 @@
  * @return void
  */
 - (void)setValue:(id)value forKey:(NSString *)key {
-    [_realDico setValue:value forKey:key];
+    
+    if (![value isMemberOfClass:_allowedClass]) {
+        
+        NSException *exception = [NSException exceptionWithName:@"InvalidObjectType"
+                                                         reason:[NSString stringWithFormat:@"value is not of type %@", _allowedClass]
+                                                       userInfo:nil];
+        @throw exception;
+    } else {
+    
+        [_realDico setValue:value forKey:key];
+    
+    }
 }
 
 

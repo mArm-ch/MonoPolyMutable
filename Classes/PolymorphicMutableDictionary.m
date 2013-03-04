@@ -70,7 +70,7 @@
         for (id key in otherDictionary) {
             
             // If an object in the dictionary isn't of the right type, throw exception
-            if (![[otherDictionary objectForKey:key] isMemberOfClass:allowedClass]) {
+            if (![[otherDictionary objectForKey:key] isKindOfClass:allowedClass]) {
                 NSException *exception = [NSException exceptionWithName:@"InvalidObjectType"
                                                                  reason:[NSString stringWithFormat:@"An object in the dictionary is not of type %@", _allowedClass]
                                                                userInfo:nil];
@@ -107,7 +107,19 @@
  * @return void
  */
 - (void)setObject:(id)anObject forKey:(id<NSCopying>)aKey {
-    [_realDico setObject:anObject forKey:aKey];
+    
+    // If an object in the dictionary isn't of the right type, throw exception
+    if (![anObject isKindOfClass:_allowedClass]) {
+        NSException *exception = [NSException exceptionWithName:@"InvalidObjectType"
+                                                         reason:[NSString stringWithFormat:@"anObject is not of type %@", _allowedClass]
+                                                       userInfo:nil];
+        @throw exception;
+        
+    } else {
+     
+        [_realDico setObject:anObject forKey:aKey];
+        
+    }
 }
 
 
@@ -122,7 +134,19 @@
  * @return void
  */
 - (void)setValue:(id)value forKey:(NSString *)key {
-    [_realDico setValue:value forKey:key];
+    
+    // If an object in the dictionary isn't of the right type, throw exception
+    if (![value isKindOfClass:_allowedClass]) {
+        NSException *exception = [NSException exceptionWithName:@"InvalidObjectType"
+                                                         reason:[NSString stringWithFormat:@"value is not of type %@", _allowedClass]
+                                                       userInfo:nil];
+        @throw exception;
+        
+    } else {
+        
+        [_realDico setValue:value forKey:key];
+    
+    }
 }
 
 
